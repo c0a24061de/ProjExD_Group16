@@ -265,8 +265,8 @@ class Heal(pg.sprite.Sprite):
         super().__init__()
         self.image = pg.Surface((30, 30))
         self.image.fill((0, 255, 0))  # 緑色
-        self.rect = self.image.get_rect()
-        self.rect.center = random.randint(0, WIDTH), 0
+        self.rect = self.image.get_rect() 
+        self.rect.center = random.randint(0, WIDTH), 0 
         self.vy = 4
 
     def update(self):
